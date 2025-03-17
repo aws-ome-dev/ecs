@@ -1,0 +1,171 @@
+{
+    "services": [
+        {
+            "serviceArn": "arn:aws:ecs:us-east-1:692859948557:service/dev-cluster/ecs-service-dev",
+            "serviceName": "ecs-service-dev",
+            "clusterArn": "arn:aws:ecs:us-east-1:692859948557:cluster/dev-cluster",
+            "loadBalancers": [],
+            "serviceRegistries": [],
+            "status": "ACTIVE",
+            "desiredCount": 1,
+            "runningCount": 1,
+            "pendingCount": 0,
+            "capacityProviderStrategy": [
+                {
+                    "capacityProvider": "FARGATE",
+                    "weight": 1,
+                    "base": 0
+                }
+            ],
+            "platformVersion": "LATEST",
+            "platformFamily": "Linux",
+            "taskDefinition": "arn:aws:ecs:us-east-1:692859948557:task-definition/dev:3",
+            "deploymentConfiguration": {
+                "deploymentCircuitBreaker": {
+                    "enable": true,
+                    "rollback": true
+                },
+                "maximumPercent": 200,
+                "minimumHealthyPercent": 100,
+                "alarms": {
+                    "alarmNames": [],
+                    "rollback": false,
+                    "enable": false
+                }
+            },
+            "deployments": [
+                {
+                    "id": "ecs-svc/0759664179677620521",
+                    "status": "PRIMARY",
+                    "taskDefinition": "arn:aws:ecs:us-east-1:692859948557:task-definition/dev:3",
+                    "desiredCount": 1,
+                    "pendingCount": 0,
+                    "runningCount": 1,
+                    "failedTasks": 0,
+                    "createdAt": "2025-03-17T19:00:52.752000+08:00",
+                    "updatedAt": "2025-03-17T19:08:08.953000+08:00",
+                    "capacityProviderStrategy": [
+                        {
+                            "capacityProvider": "FARGATE",
+                            "weight": 1,
+                            "base": 0
+                        }
+                    ],
+                    "platformVersion": "1.4.0",
+                    "platformFamily": "Linux",
+                    "networkConfiguration": {
+                        "awsvpcConfiguration": {
+                            "subnets": [
+                                "subnet-00b40e448f2182e6e",
+                                "subnet-04525e1095363d005",
+                                "subnet-055ed3e4e6fd3973e",
+                                "subnet-004c192a2fcca3f36",
+                                "subnet-0e901a95d67bff3b7",
+                                "subnet-0e1fff47442158328"
+                            ],
+                            "securityGroups": [
+                                "sg-0a1e56efd88024cd6"
+                            ],
+                            "assignPublicIp": "ENABLED"
+                        }
+                    },
+                    "rolloutState": "COMPLETED",
+                    "rolloutStateReason": "ECS deployment ecs-svc/0759664179677620521 completed."
+                }
+            ],
+            "roleArn": "arn:aws:iam::692859948557:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "events": [
+                {
+                    "id": "b9828ccb-58b3-4961-bf2b-cb89b8f86790",
+                    "createdAt": "2025-03-17T19:08:08.960000+08:00",
+                    "message": "(service ecs-service-dev) has reached a steady state."
+                },
+                {
+                    "id": "77e32f82-ab8b-4089-9a74-5684163cabcc",
+                    "createdAt": "2025-03-17T19:08:08.959000+08:00",
+                    "message": "(service ecs-service-dev) (deployment ecs-svc/0759664179677620521) deployment completed."
+                },
+                {
+                    "id": "581fcfc0-72bc-4ee4-bee1-b8d08135734b",
+                    "createdAt": "2025-03-17T19:07:18.336000+08:00",
+                    "message": "(service ecs-service-dev) has stopped 1 running tasks: (task 8e6db90217c740ebbf3679c9d1e1fee1)."
+                },
+                {
+                    "id": "c2f696db-cec5-4f60-a777-6cd131a30fed",
+                    "createdAt": "2025-03-17T19:05:24.570000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task 90b42d155d08412a99b1c16f72558e7f)."
+                },
+                {
+                    "id": "5275d503-7e95-4c77-a384-88b7f179146e",
+                    "createdAt": "2025-03-17T19:01:04.123000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task e26b0c085bd243deb25e33bd8cf0f535)."
+                },
+                {
+                    "id": "5e683b6f-e119-47d0-ab40-15a9f83b8aef",
+                    "createdAt": "2025-03-17T18:56:20.608000+08:00",
+                    "message": "(service ecs-service-dev) has reached a steady state."
+                },
+                {
+                    "id": "54b6e953-b2ae-4527-8899-c5af4cf0fc6c",
+                    "createdAt": "2025-03-17T18:56:20.607000+08:00",
+                    "message": "(service ecs-service-dev) (deployment ecs-svc/2869027571760335076) deployment completed."
+                },
+                {
+                    "id": "b7eb53f9-f601-4033-847b-ed1679865d03",
+                    "createdAt": "2025-03-17T18:54:25.994000+08:00",
+                    "message": "(service ecs-service-dev) stopped 1 pending tasks."
+                },
+                {
+                    "id": "7da682d0-921f-4aa2-927c-f993cbf59466",
+                    "createdAt": "2025-03-17T18:53:58.354000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task 8e6db90217c740ebbf3679c9d1e1fee1)."
+                },
+                {
+                    "id": "d6a95832-cf46-444d-b129-9de1226e3221",
+                    "createdAt": "2025-03-17T18:52:34.828000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task e4a75bf6988440a6919d6a91db3a8ea5)."
+                },
+                {
+                    "id": "a6c6efb3-1cf6-4af2-bf7b-311d9792ff44",
+                    "createdAt": "2025-03-17T18:51:44.834000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task 990ca171559045149110ec33b779f665)."
+                },
+                {
+                    "id": "494bccbb-6df8-45de-a777-c1e97837fd36",
+                    "createdAt": "2025-03-17T18:50:55.847000+08:00",
+                    "message": "(service ecs-service-dev) has started 1 tasks: (task b14b1e206382492d904337579eae518e)."
+                }
+            ],
+            "createdAt": "2025-03-17T18:50:37.910000+08:00",
+            "placementConstraints": [],
+            "placementStrategy": [],
+            "networkConfiguration": {
+                "awsvpcConfiguration": {
+                    "subnets": [
+                        "subnet-00b40e448f2182e6e",
+                        "subnet-04525e1095363d005",
+                        "subnet-055ed3e4e6fd3973e",
+                        "subnet-004c192a2fcca3f36",
+                        "subnet-0e901a95d67bff3b7",
+                        "subnet-0e1fff47442158328"
+                    ],
+                    "securityGroups": [
+                        "sg-0a1e56efd88024cd6"
+                    ],
+                    "assignPublicIp": "ENABLED"
+                }
+            },
+            "healthCheckGracePeriodSeconds": 0,
+            "schedulingStrategy": "REPLICA",
+            "deploymentController": {
+                "type": "ECS"
+            },
+            "createdBy": "arn:aws:iam::692859948557:user/admin",
+            "enableECSManagedTags": true,
+            "propagateTags": "NONE",
+            "enableExecuteCommand": false,
+            "availabilityZoneRebalancing": "ENABLED"
+        }
+    ],
+    "failures": []
+}
